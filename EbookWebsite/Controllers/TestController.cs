@@ -39,6 +39,7 @@ namespace EbookWebsite.Controllers
             return testModels.Find(x=>x.Id==id);
         }
 
+        //再同步一次
         [Route("query")]
         [HttpGet]
         public TestModel GetTestModel2([FromQuery]int id)
